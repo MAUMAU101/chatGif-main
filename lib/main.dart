@@ -16,22 +16,11 @@ class MyApp extends StatelessWidget {
     return MultiProvider(
       providers: [ChangeNotifierProvider(create: (_) => ChatProvider())],
       child: MaterialApp(
-        title: 'Yes or No App',
+        title: 'CRYSTALBALL_YES_OR_NO_ANSWER',
         debugShowCheckedModeBanner: false,
         theme: AppTheme(selectedColor: 5).theme(),
         home: const ChatScreen(),
       ),
     );
   }
-
-  // Scaffold myHomePage() {
-  //   return Scaffold(
-  //     appBar: AppBar(
-  //       title: const Text('Material App Bar'),
-  //     ),
-  //     body: const Center(
-  //       child: FilledButton.tonal(onPressed: null, child: Text('pícale compa')),
-  //     ),
-  //   );
-  // }
 }

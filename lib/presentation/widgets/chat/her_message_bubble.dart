@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class HerMessageBubble extends StatelessWidget {
   final String message;
   final String? urlGif;
-  const HerMessageBubble({super.key, this.message='',  this.urlGif});
+  const HerMessageBubble({super.key, this.message='Hello',  this.urlGif});
 
   @override
   Widget build(BuildContext context) {

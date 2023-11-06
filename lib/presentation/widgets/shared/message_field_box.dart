@@ -14,7 +14,6 @@ class MessageFieldBox extends StatelessWidget {
         inputDecoradorCustom(outLineInputBorder, textControl);
 
     void fieldSubmitCustom(textValue) {
-      // valor al dar submit
       onValue(textValue);
       textControl.clear();
       focusNode.requestFocus();
@@ -41,12 +40,12 @@ class MessageFieldBox extends StatelessWidget {
   InputDecoration inputDecoradorCustom(UnderlineInputBorder outLineInputBorder,
       TextEditingController textControl) {
     return InputDecoration(
-      hintText: 'End your message with a "?"',
+      hintText: 'You must end your message with a "?"',
       enabledBorder: outLineInputBorder,
       focusedBorder: outLineInputBorder,
       filled: true,
       suffixIcon: IconButton(
-          icon: const Icon(Icons.send_outlined),
+          icon: const Icon(Icons.send_rounded),
           onPressed: () {
             //valor de la caja de texto
             final textValue = textControl.value.text;
